@@ -18,7 +18,7 @@ public class Cheers {
                         System.out.println("Give me a "+c+": "+c+"!");
                 }
             }
-            System.out.println("what does that spell?");
+            System.out.println("What does that spell?");
             word = word.toUpperCase();
             for(int i=0; i<num; i++){
                 System.out.println(word+"!!!");

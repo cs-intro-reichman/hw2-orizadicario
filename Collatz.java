@@ -5,7 +5,7 @@ public class Collatz {
 		String mode = args[1];
 		int amountTimes=1;
 		if(mode.equals("v")){
-			System.out.print(num+" ");
+			System.out.print(num);
 		do{
 			amountTimes++;
 			if(num%2==0){
@@ -13,10 +13,10 @@ public class Collatz {
 			}else{
 				num=num*3+1;
 			}
-			System.out.print(num+" ");
+			System.out.print(" "+num);
 		}while(num!=1);
 		System.out.println(" ("+amountTimes+")");
-		System.out.println("Every one of the first "+num+" hailstone sequences reched 1.");
+		System.out.println("Every one of the first "+num+" hailstone sequences reached 1.");
 	}if(mode.equals("c")){
 		do{
 			amountTimes++;
