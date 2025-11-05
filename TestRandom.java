@@ -2,8 +2,8 @@
 public  class  TestRandom {
 	public static void main(String[]  args) {
 	    int n = Integer.parseInt(args[0]);
-		int bigger = 0;
-		int smaller = 0;
+		double bigger = 0.0;
+		double smaller = 0.0;
 		for(int i=0; i<n;i++){
 			double num = Math.random();
 			if (num>0.5){
@@ -19,8 +19,8 @@ public  class  TestRandom {
 			ratio = bigger/smaller;	
 		}
 		
-		System.out.println("> 0.5:  "+bigger+" times");
-		System.out.println("<= 0.5:  "+smaller+" times");
+		System.out.println("> 0.5:  "+(int)bigger+" times");
+		System.out.println("<= 0.5:  "+(int)smaller+" times");
 		System.out.println("Ratio:  "+ratio);
 		
 	}
