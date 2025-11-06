@@ -12,7 +12,7 @@ public class CalcPi {
 			}
 		}
 		approx = approx*4;
-		System.out.println("Pi according to Java: "+Math.PI);
-		System.out.println("Pi, approximated:     "+approx);
+		System.out.println("pi according to Java: "+Math.PI);
+		System.out.println("pi, approximated:     "+approx);
 	}
 }
