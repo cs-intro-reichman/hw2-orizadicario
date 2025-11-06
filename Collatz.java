@@ -4,6 +4,7 @@ public class Collatz {
 	    int num = Integer.parseInt(args[0]);
 		String mode = args[1];
 		int amountTimes=1;
+		int start = num;
 		if(mode.equals("v")){
 			System.out.print(num);
 		do{
@@ -17,7 +18,7 @@ public class Collatz {
 		}while(num!=1);
 		System.out.println(" ("+amountTimes+")");
 		System.out.println("Every one of the first "+num+" hailstone sequences reached 1.");
-	}if(mode.equals("c")){
+	} else if(mode.equals("c")){
 		do{
 			amountTimes++;
 			if(num%2==0){
@@ -26,7 +27,7 @@ public class Collatz {
 				num=num*3+1;
 			}
 		}while(num!=1);
-		System.out.println("Every one of the first "+amountTimes+" hailstone sequences reached 1.");
+		System.out.println("Every one of the first "+start+" hailstone sequences reached 1.");
 
 		
 	}
