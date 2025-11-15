@@ -25,3 +25,6 @@ public  class  TestRandom {
 		
 	}
 }
+
+// great edge case catching!
+
