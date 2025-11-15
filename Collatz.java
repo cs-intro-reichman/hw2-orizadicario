@@ -17,7 +17,7 @@ public class Collatz {
                     else
                         num = num * 3 + 1;
                     System.out.print(" " + num);
-                } while (num != 1);
+                } while (num != 1); // Great useage of do while!!
 
                 System.out.println(" (" + steps + ")");
             }
@@ -39,3 +39,11 @@ public class Collatz {
 	}
 
 }
+
+// notice that we dont really need th else if for mode 'c', since we only need the last line. 
+// So we can have -
+//  if (mode == 'v') {
+// blah blah
+// }
+// System.out.print(Sentence) <- will be executed for both mode 'c' and 'v'
+
